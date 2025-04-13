@@ -15,7 +15,9 @@ export default function GamePage() {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/data");
+        const response = await axios.get(
+          "https://json-server-api-qniw.onrender.com/data"
+        );
         setQuestions(response.data.questions);
         setLoading(false);
       } catch (err) {
