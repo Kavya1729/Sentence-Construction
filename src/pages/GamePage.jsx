@@ -11,13 +11,12 @@ export default function GamePage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await axios.get(
-          "https://json-server-api-qniw.onrender.com/data"
-        );
+        const response = await axios.get(`${backendUrl}/data`);
         setQuestions(response.data.questions);
         setLoading(false);
       } catch (err) {
