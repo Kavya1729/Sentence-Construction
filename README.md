@@ -1,12 +1,55 @@
-# React + Vite
+# **Sentence Construction Tool**  
+*Interactive React Application for Language Learning*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## **✨ Core Features**  
+- **Fill-in-the-Blank System**  
+  - Drag and drop words into sentence gaps  
+  - 4 word options provided per question  
+  - Click to remove selected words  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Timed Quiz Flow**  
+  - 30-second countdown per question  
+  - Auto-advance when timer expires  
+  - Next button disabled until complete  
 
-## Expanding the ESLint configuration
+- **Performance Analytics**  
+  - Final score display (out of 10)  
+  - Correct/incorrect answer highlights  
+  - Solutions for missed questions  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## **🛠️ Tech Stack**  
+- **Frontend**: React + Vite  
+- **Styling**: Tailwind CSS    
+- **Deployment**: Vercel
+
+---
+
+## **🚀 Quick Start**  
+1. **Clone repository**  
+   ```bash
+   git clone https://github.com/your-username/project.git
+
+## **Install packages**
+
+npm install
+
+
+## **Run development server**
+
+npm run dev
+
+
+## **📂 Project Structure**
+
+<pre>
+/src
+├── components/      # Reusable UI elements
+├── pages/           # Main application screens
+├── hooks/           # Custom React hooks
+├── utils/           # Helper functions
+└── assets/          # Images/styles
+</pre>
